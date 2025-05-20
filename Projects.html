@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Portfolio with the class</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <style>
+        
+        .skills-projects{
+            width: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: lightgray;
+        }
+        #skills-box-projects{
+        background-color: white;
+        margin: 20px;
+        border: 2px black solid;
+        text-align: center;
+        padding: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color:black;
+        }
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            color: greenyellow;
+        }
+        @media(max-width:768px){
+            .skills-projects{
+                grid-template-columns: 1fr;
+                
+            }
+        }
+        @media(min-width:768px){
+            .skills-projects{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        
+            
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header">
+                <img  id="logo" src="./Images/NewDesign.png" alt="CoreyF. Logo">
+
+            </div>
+           
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="Contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class = "skills-projects">
+        
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/FlexboxBlogPage/">
+            <img src="./Images/Blog.png" width="50%" height="50%" alt="Flexbox Blog Page Webpage Image">
+            <h2>CSS Flexbox Blog Page</h2>
+            <p>Responsive flexbox blog page using HTML and CSS Flex properties.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/TwoColumnResume/">
+            <img src="./Projects/TwoColumnResume/TwoColumnResume.PNG" width="50%" height="50%" alt="Two Column Resume Webpage Image">
+            <h2>CSS Two Column Resume Layout </h2>
+            <p>Use of CSS Properties to design different resume layouts from simple design to modern looking resume.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/Forms/">
+                <img src="./Images/Form.png" width="50%" height="50%" alt=" Adventure Club Form Webpage Image">
+                <h2>HTML Forms</h2>
+                <p>HTML Form to create an account to sign up an email.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/PhotoCollage/">
+                <img src="./Images/Collage.png" width="50%" height="50%" alt="Collage Webpage Image">
+                <h2>CSS Photo Collage</h2>
+                <p>An responsive image gallery app for using css grid properties.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/PizzaApp/">
+                <img src="./Images/pizzaApp.PNG" width="50%" height="50%" alt="Pizza Webpage Image">
+                <h2>Pizza Tracker App</h2>
+                <p>An responsive Pizza tracker webpage to track when your pizza is ready for pickup.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/QuizApp/">
+                <img src="./Images/quizApp.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Quiz App</h2>
+                <p>An Quiz webpage to test your coding knowledge.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/CalculatorApp/">
+                <img src="./Projects/CalculatorApp/calculatorappPNG.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Calculator Web App</h2>
+                <p>An webpage to help solve arithmetic equations.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/UnitConversionApp/">
+                <img src="./Projects/UnitConversionApp/UnitConversionApp.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Unit Conversion Web App</h2>
+                <p>An webpage to help solve convert basic metrics.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/BudgetPlanner/">
+                <img src="./Projects/BudgetPlanner/budgetPlanner.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Budget Planner App</h2>
+                <p>An app to manage your budget and daily tasks. </p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/TaskManagerApp/">
+                <img src="./Projects/TaskManagerApp/TaskManagerApp.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Task Manager Web App</h2>
+                <p>An app to manage your budget and daily tasks. </p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/TaskManagerLocalStorage/">
+                <img src="./Projects/TaskManagerLocalStorage/TaskManagerLocalStorage.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Task Manager Web App Using Local Storage</h2>
+                <p>An app to manage your daily tasks using local storage.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/BookstoreInventoryApp/">
+                <img src="./Projects/BookstoreInventoryApp/BookInventoryApp.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Bookstore Inventory Web App</h2>
+                <p>An app for a bookstore to manage inventory of books.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/StudentFinderApp/">
+                <img src="./Projects/StudentFinderApp/StudentFinderApp.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Student Finder Web App</h2>
+                <p>An app or database of students for access.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/TechStoreApp/">
+                <img src="./Projects/TechStoreApp/TechStoreApp.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Technology Store Web App</h2>
+                <p>An store webpage to order different technology.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/AgeCalculator/">
+                <img src="./Projects/AgeCalculator/AgeCalculator.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Age Calculator Web App</h2>
+                <p>An app to calculate how old you are.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/BirthdayCountdown/">
+                <img src="./Projects/BirthdayCountdown/BirthdayCountdown.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Birthday Countdown Web App</h2>
+                <p>An app to calculate how many days til your birthday.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/ShoppingCartCalculator/">
+                <img src="./Projects/ShoppingCartCalculator/ShoppingCartCalculator.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Shopping Cart Calculator App</h2>
+                <p>An app to calculate the sum of your shopping cart.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/GameProject/">
+                <img src="./Projects/NumberGuessGame/NumberGuessgame.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Number Guess Game App</h2>
+                <p>An web app game to guess a randomly chosen number.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/RandomGame/">
+                <img src="./Projects/GameProject/game.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Game Project App</h2>
+                <p>An app of my game project.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/Glowing-Text/">
+                <img src="./Projects/GlowTextTutorial/GlowingText.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Glowing Text Tutorial Web App</h2>
+                <p>An app of text that glows and adjusts.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/Glowing-Text/">
+                <img src="./Projects/GlowTextTutorial/GlowingText.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Glowing Text Tutorial Web App</h2>
+                <p>An app of text that glows and adjusts.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/FormValidation/">
+                <img src="./Projects/FormValidation/FormValidation.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Form Validation With Regex Web App</h2>
+                <p>A form with validation with regex.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/FormValidation/">
+                <img src="./Projects/FormValidation/FormValidation.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Flash Card Web App</h2>
+                <p>A flash card web app for flash cards.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/OpacitySlider/">
+                <img src="./Projects/OpacitySlider/OpacitySlider.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Opacity Web App</h2>
+                <p>A web app with a opacity slider to adjust visibility.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/HamburgerMenu/">
+                <img src="./Projects/HamburgerMenu/HamburgerMenu.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Hamburger Web App</h2>
+                <p>A hamburger menu app.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/TypeTester/">
+                <img src="./Projects/TypingTester/TypingTester.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Typing Tester App</h2>
+                <p>A app to test your typing speed.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/TypeTester/">
+                <img src="./Projects/ThemePreference/ThemePreference.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Theme Preference App</h2>
+                <p>A app to toggle the theme preference.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/ProductSearchApp/">
+                <img src="./Projects/ProductSearchApp/ProductSearchApp.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Product Search App</h2>
+                <p>A app to search for products.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/BootstrapExamples/">
+                <img src="./Projects/BootstrapExamples/BootstrapExample.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Bootstrap Examples App</h2>
+                <p>A web app full of bootstrap examples of styling.</p>
+            </a>
+        </div>
+        <div id="skills-box-projects">
+            <a href="https://coreybf.github.io/CapstoneProject/">
+                <img src="./Projects/CapstoneProject/CapstoneProject.PNG" width="50%" height="50%" alt="quiz Webpage Image">
+                <h2>Capstone Project </h2>
+                <p>A web app to search for a variety of movies based on name using regex and media querrys to be responsive and dynamic.</p>
+            </a>
+        </div>
+        
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Corey Furman. All Rights Reserved.</p>
+    </footer>
+    
+
+</body>
+</html>

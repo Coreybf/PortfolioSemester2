@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Text</title>
+    <style>
+        #glowText {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            text-shadow: 0 0 10px #00ff00;
+            transition: all 0.3s ease;
+            background-color: black;
+            padding: 20px;
+            width: fit-content;
+            margin: 20px auto;
+            }
+            @keyframes pulse {
+    0% { text-shadow: 0 0 5px currentColor; }
+    50% { text-shadow: 0 0 20px currentColor; }
+    100% { text-shadow: 0 0 5px currentColor; }
+    }
+    .pulsing {
+    animation: pulse 2s infinite;
+    }
+    </style>
+</head>
+<body>
+    <label for="glowIntensity">Glow Intensity:</label>
+    <input type="range" id="glowIntensity" min="0" max="50" value="10">
+    <br>
+    <label for="letterSpacing">Letter Spacing:</label>
+    <input type="range" id="letterSpacing" min="0" max="20" value="0">
+    <br>
+    <label for="glowColor">Glow Color:</label>
+    <input type="color" id="glowColor" value="#00ff00">
+    <br>
+    <label for="textRotation">Text Rotation:</label>
+    <input type="range" id="textRotation" min="0" max="360" value="0">
+    <br>
+    <label for="pulseEffect">Pulse Effect:</label>
+    <input type="checkbox" id="pulseEffect">
+    <br>
+    <button id="resetButton">Reset All Settings</button>
+    <br>
+    <div id="glowText">Glowing Text!</div>
+    <script>
+        var glowSize = document.getElementById('glowIntensity').value + 'px';
+var letterSpace = document.getElementById('letterSpacing').value + 'px';
+var glowColor = document.getElementById('glowColor').value;
+var rotation = document.getElementById('textRotation').value + 'deg';
+var text = document.getElementById('glowText');
+var isPulsing = document.getElementById('pulseEffect').checked;
+        function updateGlow() {
+var glowSize = document.getElementById('glowIntensity').value + 'px';
+var letterSpace = document.getElementById('letterSpacing').value + 'px';
+var glowColor = document.getElementById('glowColor').value;
+var rotation = document.getElementById('textRotation').value + 'deg';
+var text = document.getElementById('glowText');
+var isPulsing = document.getElementById('pulseEffect').checked;
+if (isPulsing) {
+text.classList.add('pulsing');
+text.style.color = glowColor;
+} else {
+text.classList.remove('pulsing');
+text.style.textShadow = `0 0 ${glowSize} ${glowColor}`;
+}
+text.style.letterSpacing = letterSpace;
+text.style.transform = `rotate(${rotation})`;
+}
+var glowSize = document.getElementById('glowIntensity').value + 'px';
+text.style.letterSpacing = letterSpace;
+text.style.transform = `rotate(${rotation})`;
+
+function resetControls() {
+document.getElementById('glowIntensity').value = 10;
+document.getElementById('letterSpacing').value = 0;
+document.getElementById('glowColor').value = '#00ff00';
+document.getElementById('textRotation').value = 0;
+document.getElementById('pulseEffect').checked = false;
+updateGlow();
+}
+document.getElementById('glowIntensity').addEventListener('input', updateGlow);
+document.getElementById('letterSpacing').addEventListener('input', updateGlow);
+document.getElementById('glowColor').addEventListener('input', updateGlow);
+document.getElementById('textRotation').addEventListener('input', updateGlow);
+document.getElementById('pulseEffect').addEventListener('change', updateGlow);
+document.getElementById('resetButton').addEventListener('click', resetControls);
+// Initialize the display
+updateGlow();
+    </script>
+</body>
+</html>
